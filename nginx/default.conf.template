@@ -1,0 +1,17 @@
+upstream backend {
+  server  ${API_HOST};
+}
+
+server {
+  listen 80;
+
+  location /api {
+    proxy_pass http://backend;
+  }
+
+  location / {
+    root /usr/share/nginx/html/;
+    index index.html index.htm;
+    try_files $uri $uri/ /index.html =404;
+  }
+} 

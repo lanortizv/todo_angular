@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/vscode,node,angular
 # Edit at https://www.toptal.com/developers/gitignore?templates=vscode,node,angular
 
-### Dockerfile
-Dockerfile
 
 ### Angular ###
 ## Angular ##
